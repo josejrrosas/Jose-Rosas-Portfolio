@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Jose Rosas Portfilio Website</title>
@@ -12,26 +13,30 @@
 
 <body>
     <header>
-        <div id="name"> Jose Rosas </div>
-        <nav>
-            <ul>
-                <li><a href="#about-me"></a>About Me</li>
-                <li><a href="#work"></a>Work</li>
-                <li><a href="#contact"></a>Contact Me</li>
-                <li><a href="#resume"></a>Resume</li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div id="name"> Jose Rosas </div>
+            <nav>
+                <ul class = "nav_links">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="banner">
-            <img src="assets/images/banner.jpeg" alt="white vertical curved lines from a building">
+            <img id="banner" src="assets/images/banner.jpeg" alt="white vertical curved lines from a building">
             <div id="portfolio">Welcome to my Portfolio!</div>
         </div>
     </header>
 
     <main>
         <section class="about-me" id="about-me">
-            <header>
+            <h1>
                 About Me
-            </header>
+            </h1>
+            <hr>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quam illum libero reiciendis
                 consequatur, obcaecati neque nisi ex architecto nulla dolorum? Nihil, vel similique incidunt sint
@@ -46,22 +51,38 @@
         </section>
 
         <section class="work" id="work">
-            <Header>Work</Header>
-            
+            <h1>Work</h1>
+            <hr>
+            <div class="images">
+                <img class="single-img" id="image1" src="assets/images/image-1.jpeg" alt="close up of code on a screen">
+                <img class="single-img" id="image2" src="assets/images/image-2.jpeg" alt="a marble on top of a thin grate with retro colors">
+                <img class="single-img" id="image3" src="assets/images/image-3.jpeg" alt="close of the aswd part of a keyboard: lit up">
+                <img class="single-img" id="image4" src="assets/images/image-4.jpeg" alt="a reflective triangular prism on top of a circle shaped mirror with retro colors reflecting">
+                <img class="single-img" id="image5" src="assets/images/image-5.jpeg" alt="close up of a red motherboard">
+            </div>
         </section>
 
         <section class="contact" id="contact">
-            <Header>Contact Me</Header>
+            <h1>Contact Me</h1>
+            <hr>
+            <address>
+                <a class="info" href="tel:+13115552368"><i class="fas fa-phone"></i>555-555-5555</a>
+                <a class="info" href="mailto:josejrrosas@yahoo.com"><i class="fas fa-envelope"></i>josejrrosas@yahoo.com</a>
+                <a class="info" href="https://github.com/josejrrosas"><i class="fab fa-github"></i>Github</a>
+                <a class="info" href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a class="info" href="https://www.linkedin.com/in/joselrosasjr/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </address>
         </section>
 
         <section class="resume" id="resume">
-            <Header>Resume</Header>
+            <h1>Resume</h1>
+            <hr>
+            <div class="file">
+                <p><a href="#"> <i class="far fa-file"></i></a>Resume coming soon.</p>
+            </div>
         </section>
-
     </main>
-    <footer>
 
-    </footer>
 
 </body>
 
