@@ -5,7 +5,8 @@
     height: 100%; 
     width: 100%;
 }
-body {
+
+body{
     background-image:url(../images/Background-photo.jpeg);
     background-repeat:no-repeat;
     background-size: cover;
@@ -253,6 +254,7 @@ address a{
     .navbar{
         height: auto;
     }
+
     .nav_links li a {
         font-size: 12px;
         margin-top: 5px;
@@ -268,6 +270,7 @@ address a{
         width:auto;
         font-size: 25px;
     }
+
     h1{
         margin:0px;
         font-size: 25px;
@@ -312,6 +315,7 @@ address a{
         margin-top: 30px;
         align-items: center;    
     }
+    
     .project{
         bottom: 50px;
         right: 50px;
