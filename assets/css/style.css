@@ -119,12 +119,13 @@ main{
     margin-top: 100px;
     height:auto;
     flex-direction: column;
+    font-size: 20px;
 }
 
 h1{
     font-weight: 700;
     font-size: 80px;
-    color:#3e3e3f;
+    color:#A3BCB6;
     text-align: center;
     margin: 20px;
 }
@@ -145,42 +146,57 @@ hr{
     height:auto;
     width:100%;
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .images{
-    display: flex;
-    align-items: center;
+    display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    width:auto;
+    position: relative;
+    margin:25px 100px;
 }
 
 #image1{
-    width: 800px;
+    width: 900px;
     height: auto;
-    margin:10px;
-    padding: 3% 20px 20px;
-}
-
-.other-img{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .single-img{
-    width: 400px;
+    width: 500px;
     height:370px;
     margin:10px;
-    padding: 3% 20px 20px;
+    border:10px solid #A3BCB6;
+    border-radius: 50px;
+}
+
+.project{
+    position: absolute;
+    height:auto;
+    width:auto;
+    margin:0px;
+    bottom: 50px;
+    right: 50px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 50px;
+    color: #A3BCB6;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
 }
 
 .images img:hover{
     opacity: .5;
     transition: .9s;
 }
+
 
 .contact{
     display: flex;
@@ -226,7 +242,7 @@ address a{
     padding-left:0%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
     #name{
         height: auto;
@@ -256,7 +272,6 @@ address a{
         margin:0px;
         font-size: 25px;
     }
-
 
     #image1 , .single-img{
         height: 180px;
@@ -296,5 +311,18 @@ address a{
         grid-area: 1 / 1 / 2 / 3; 
         margin-top: 30px;
         align-items: center;    
+    }
+    .project{
+        bottom: 50px;
+        right: 50px;
+        background-color: rgba(0,0,0,.5);
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .overlay{
+        margin:10px;
     }
   }
