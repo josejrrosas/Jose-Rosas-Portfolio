@@ -40,15 +40,13 @@ header{
 
 #name{
     display: flex;
-    cursor: pointer;
     background-color: #3e3e3f;
     font-size: 26px;
     color:#A3BCB6;
     height:40px;
     width:200px;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    padding-top: 10px;
     border-radius: 40px;
 }
 
@@ -245,12 +243,13 @@ address a{
     padding-left:0%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
 
     #name{
         height: auto;
         width:auto;
         font-size: 15px;
+        padding-left: 15px;
     }
 
     .navbar{
