@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-img{
-    width: 50px;
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -31,6 +27,7 @@ header{
     color: var(--grey);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 5vh;
 }
 
@@ -46,6 +43,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 li{
@@ -95,13 +93,151 @@ a:hover{
 }
 
 /* main part */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .sub-section{
     display: flex;
     justify-content: space-around;
-    padding: 80px;
+    color: var(--grey);
+    align-items: center;
+    padding: 50px;
 }
 
 h2{
     font-size:50px;
 }
 
+/* about me */
+#about-me{
+    display: flex;
+    flex-direction: column;
+    border-bottom:2px var(--grey) solid ;
+}
+
+#about-me h2{
+    border-bottom:2px var(--grey) solid ;
+    text-align: center;
+}
+
+#about-me p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    max-width: 1000px;
+}
+
+
+/* Work  */
+#work{
+    display: flex;
+    flex-direction: column;
+    border-bottom:2px var(--grey) solid ;
+}
+
+#work h2{
+    border-bottom:2px var(--grey) solid ;
+}
+.images{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.overlay{
+    height:300px;
+    width: 400px;
+    margin:10px;
+    background-color: var(--grey);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#project-1{
+    background-image: url(/assets/images/FoodforBrews.gif);
+}
+#project-2{
+    background-image: url(/assets/images/Weather.png);
+}
+#project-3{
+    background-image: url(/assets/images/workday.png);
+}
+#project-4{
+    background-image: url(/assets/images/codequiz.png);
+}
+#project-5{
+    background-image: url(/assets/images/passwordgen.png);
+}
+
+
+/* contact me */
+#contact{
+    display: flex;
+    flex-direction: column;
+    border-bottom:2px var(--grey) solid ;
+}
+
+#contact h2{
+    border-bottom:2px var(--grey) solid ;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* resume */
+#resume{
+    display: flex;
+    flex-direction: column;
+    border-bottom:2px var(--grey) solid ;
+}
+
+#resume h2{
+    border-bottom:2px var(--grey) solid ;
+}
+
+/* mobile adjustments */
+@media only screen and (max-width:1000px){
+    .navbar{
+        height:auto;
+    }
+
+    .hero{
+        height:auto;
+    }
+
+    #avatar{
+        width: 200px;
+    }
+
+    .sub-section{
+        padding: 10px;
+    }
+
+    .overlay{
+        height:225px;
+        width: 300px;
+        margin:10px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+    
+    #welcome{
+        font-size:30px;
+    }
+}
