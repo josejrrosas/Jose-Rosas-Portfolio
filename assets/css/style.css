@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -25,6 +29,7 @@ section{
 
 header{
     background-color: var(--grey-hover);
+    height: 100vh;
 }
 
 
@@ -36,6 +41,7 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100vw;
+    position: fixed;
 }
 
 #name{
@@ -268,7 +274,8 @@ address{
 
     .hero{
         height:auto;
-        background-size: 100%;
+        background-size: 150%;
+        padding-top: 60px;
     }
 
     #avatar{
@@ -307,8 +314,9 @@ address{
     .nav_links{
         display:none;
         background-color: var(--teal);
-        min-width: 90vh;
+
     }
+
     #name.hide{
         display:none;
     }
@@ -325,5 +333,6 @@ address{
     #about-me p{
         font-size: 15px;
     }
+
     
 }
