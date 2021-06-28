@@ -86,7 +86,7 @@ a:hover{
 
 /* For main welcome part with headshot */
 .hero{
-    background-image: url(/assets/images/mountains.jpeg);
+    background-image: url('/assets/images/mountains.jpeg');
     background-size: 150%;
     background-repeat:round;
     display: flex;
@@ -203,19 +203,19 @@ h2{
 
 
 #project-1{
-    background-image: url(/assets/images/foodforbrews.png);
+    background-image: url('/assets/images/foodforbrews.png');
 }
 #project-2{
-    background-image: url(/assets/images/Weather.png);
+    background-image: url('/assets/images/Weather.png');
 }
 #project-3{
-    background-image: url(/assets/images/workday.png);
+    background-image: url('/assets/images/workday.png');
 }
 #project-4{
-    background-image: url(/assets/images/codequiz.png);
+    background-image: url('/assets/images/codequiz.png');
 }
 #project-5{
-    background-image: url(/assets/images/passwordgen.png);
+    background-image: url('/assets/images/passwordgen.png');
 }
 
 
