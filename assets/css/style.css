@@ -86,8 +86,8 @@ a:hover{
 
 /* For main welcome part with headshot */
 .hero{
-    background-image: url('/assets/images/mountains.jpeg');
-    background-size: 150%;
+    background-image: url('../images/mountains.jpeg');
+    background-size: cover;
     background-repeat:round;
     display: flex;
     flex-direction: column;
@@ -203,19 +203,19 @@ h2{
 
 
 #project-1{
-    background-image: url('/assets/images/foodforbrews.png');
+    background-image: url('../images/foodforbrews.png');
 }
 #project-2{
-    background-image: url('/assets/images/Weather.png');
+    background-image: url('../images/Weather.png');
 }
 #project-3{
-    background-image: url('/assets/images/workday.png');
+    background-image: url('../images/workday.png');
 }
 #project-4{
-    background-image: url('/assets/images/codequiz.png');
+    background-image: url('../images/codequiz.png');
 }
 #project-5{
-    background-image: url('/assets/images/passwordgen.png');
+    background-image: url('../images/passwordgen.png');
 }
 
 
@@ -274,7 +274,6 @@ address{
 
     .hero{
         height:auto;
-        background-size: 150%;
         padding-top: 60px;
     }
 
