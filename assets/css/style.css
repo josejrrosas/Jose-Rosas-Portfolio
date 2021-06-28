@@ -313,7 +313,6 @@ address{
     .nav_links{
         display:none;
         background-color: var(--teal);
-
     }
 
     #name.hide{

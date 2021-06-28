@@ -1,6 +1,6 @@
 # Jose-Rosas-Portfolio
 
-  ## Description:
+  ## Summary:
     This is my personal portfolio website. 
 
   ## Table of Contents:
