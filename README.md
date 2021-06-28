@@ -12,7 +12,7 @@
 
   * [License](#License)
   
-  * [Questions](#Questions)
+  * [Contact](#Contact)
     
   
   ## Description:
@@ -30,6 +30,7 @@
   ## Languages-Used:
  * HTML
  * CSS
+ * Javascript
 
   ## License:
     SMU bootcamp
