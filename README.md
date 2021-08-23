@@ -22,7 +22,7 @@
     for in the navigation bar.
 
   ## Website:
-  Deployed Site here: https://josejrrosas.github.io/Jose-Rosas-Portfolio/
+  Deployed Site here: https://josejrrosas.com/
   
 ![My Portfolio](assets/images/screenshot.png)
 
