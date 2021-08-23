@@ -1,335 +1,213 @@
-:root {
-    --grey: rgb(62, 62, 63);
-    --grey-hover: #a1a1a8;
-    --teal: #A3BCB6;
-  }
-
-*{
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: var(--grey-hover);
+section {
+    background-color: white;
 }
 
-section{
-    background-color: var(--teal);
-    margin: 30px 0px;
-    min-width: 90vw;
-    box-shadow: 30px 0px 40px rgba(0,0,0, 0.3),
-    -30px 0px 40px rgba(0,0,0, 0.3);
-}
-
-header{
-    background-color: var(--grey-hover);
+.hero {
+    background-color: #1c1d25;
     height: 100vh;
-}
-
-
-/* Navigation bar */
-.navbar{
-    background-color: var(--teal);
-    color: var(--grey);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100vw;
-    position: fixed;
-}
-
-#name{
-    font-size: 30px;
-    margin: 10px;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-ul.show{
-    display:block;
-}
-
-li{
-    text-align: center;
-    width: fit-content;
-    margin:0px 30px;
-}
-
-a{
-    color: var(--grey);
-    text-decoration: none;
-}
-
-a:hover{
-    color: var(--grey-hover);
-    cursor: pointer;
-}
-
-.hamburger{
-    display: none;
-}
-
-/* For main welcome part with headshot */
-.hero{
-    background-image: url('../images/mountains.jpeg');
-    background-size: cover;
-    background-repeat:round;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    height:100vh;
-}
-
-#avatar{
-    width: 400px;
-    border: 5px var(--teal) solid;
-    border-radius: 25%;
-}
-
-#welcome{
-    font-size: 50px;
-    border: 5px var(--teal) solid;
-    background-color: var(--grey);
-    color:var(--teal);
-    border-radius: 10px;
-    padding: 5px;
-    margin:20px;
-    text-align: center;
-}
-
-/* main part */
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.sub-section{
-    display: flex;
-    justify-content: space-around;
-    color: var(--grey);
-    align-items: center;
-    padding: 50px;
-    max-width: 90vw;
-    border-radius: 10px;
-}
-
-h2{
-    font-size:50px;
-}
-
-/* about me */
-#about-me{
-    display: flex;
-    flex-direction: row;
-}
-
-#about-me h2{
-    text-align: center;
-}
-
-#about-me p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    font-size: 20px;
-    max-width: 50%;
-    padding:10px 20px;
-    line-height: 1.5;
-}
-
-
-/* Work  */
-#work{
-    display: flex;
-    flex-direction: column;
-    padding:50px 0px;
-}
-
-#work h2{
-    margin:10px 30px;
-}
-.images{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 90%;
-}
-.overlay{
-    height:300px;
-    width: 400px;
-    margin:10px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: 30px 0px 40px rgba(0,0,0, 0.2),
-                    -30px 0px 40px rgba(0,0,0, 0.2);
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.overlay:hover{
-    opacity: .25;
-}
-
-.project{
-    margin: 10px;
-    background-color: rgba(62,62,63, .5);
     color: white;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-
-#project-1{
-    background-image: url('../images/foodforbrews.png');
-}
-#project-2{
-    background-image: url('../images/Weather.png');
-}
-#project-3{
-    background-image: url('../images/workday.png');
-}
-#project-4{
-    background-image: url('../images/codequiz.png');
-}
-#project-5{
-    background-image: url('../images/passwordgen.png');
-}
-
-
-/* contact me */
-#contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#contact h2{
-    margin:10px 30px;
-}
-
-address{
-    display: flex;
-    flex-direction: column;
-}
-
-.info{
-    margin:10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.info i{
-    margin:0px 10px;
-}
-
-/* resume */
-#resume{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-
-#resume h2{
-    margin:10px 30px;
-}
-
-#resume i{
-    margin:10px;
     font-size: 40px;
 }
 
-/* mobile adjustments */
-@media only screen and (max-width:1000px){
-    .navbar{
-        height:auto;
-    }
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
 
-    header{
-        height:auto;
-    }
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .hero{
-        height:auto;
-        padding-top: 60px;
-    }
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
 
-    #avatar{
-        width: 200px;
-        margin:20px;
-    }
+li {
+    text-decoration: none;
+}
 
-    .sub-section{
-        padding: 0px;
-    }
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
 
-    .overlay{
-        height:200px;
-        width: 250px;
-        margin:10px;
-    }
+h2 {
+    font-size: 50px;
+}
 
-    h2{
-        font-size:30px;
-        margin-top: 20px;
-    }
-    
-    #welcome{
-        font-size:30px;
-    }
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
 
-    .hamburger{
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ef744b;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 80px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
         display: block;
-        border :0;
+        border: 0;
         background-color: transparent;
-        color:var(--grey);
+        color: white;
         font-size: 30px;
-        margin:20px;
+        margin: 20px;
+        align-self: flex-end;
     }
 
-    .nav_links{
-        display:none;
-        background-color: var(--teal);
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
     }
 
-    #name.hide{
-        display:none;
+    ul.show {
+        display: block;
     }
 
-    li{
-        margin:15px;
-        font-weight: 700;
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
     }
 
-    #about-me , #contact{
-        flex-direction: column;
+    .logo {
+        display: none;
     }
-
-    #about-me p{
-        font-size: 15px;
-    }
-
-    
 }
