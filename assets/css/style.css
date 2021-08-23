@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -194,7 +194,7 @@ a {
     ul {
         display: none;
         background-color: #2b2c38;
-        margin: 0ppx;
+        margin: 0px;
     }
 
     ul.show {
